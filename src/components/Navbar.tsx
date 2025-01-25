@@ -11,13 +11,18 @@ function Navbar({ className }: { className?: string }) {
     <div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
-      <Link href={"/"}>
+     
+
+
+
+
+     
         <Menu setActive={setActive}>
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="HOME"
-          ></MenuItem>
+         <Link href={"/"}>
+            <MenuItem setActive={setActive} active={active} item="Home">
+            
+            </MenuItem>
+            </Link>
 
           <MenuItem setActive={setActive} active={active} item="COURSE">
             <div className="  text-sm grid grid-cols-2 gap-10 p-4">
@@ -36,16 +41,13 @@ function Navbar({ className }: { className?: string }) {
             active={active}
             item="ROADMAP"
           ></MenuItem>
-          {/* <Link href={"/contact"}> */}
-            <MenuItem
-
-              setActive={setActive}
-              active={active}
-              item="CONTACT US"
-            ></MenuItem>
-          {/* </Link> */}
+          <Link href={"/contact"}>
+            <MenuItem setActive={setActive} active={active} item="Contact Us">
+            
+            </MenuItem>
+            </Link>
         </Menu>
-      </Link>
+    
     </div>
   );
 }

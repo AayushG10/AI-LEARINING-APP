@@ -33,11 +33,11 @@ export default function RootLayout({
       >
         <div className="flex relative w-full items-center justify-center">
           <Navbar />
-            <Herosection/> 
-    
+            {/* <Herosection/> 
+     */}
         </div>
 
-        {/* {children} */}
+        {children}
       </body>
     </html>
   );
