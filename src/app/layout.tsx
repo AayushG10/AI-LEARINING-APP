@@ -6,6 +6,7 @@ import Herosection from "@/components/Herosection";
 
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,8 +34,7 @@ export default function RootLayout({
       >
         <div className="flex relative w-full items-center justify-center">
           <Navbar />
-            {/* <Herosection/> 
-     */}
+        
         </div>
 
         {children}
