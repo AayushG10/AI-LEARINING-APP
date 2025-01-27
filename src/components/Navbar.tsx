@@ -41,11 +41,11 @@ function Navbar({ className }: { className?: string }) {
             active={active}
             item="ROADMAP"
           ></MenuItem>
-          <Link href={"/contact"}>
+          {/* <Link href={"/contact"}> */}
             <MenuItem setActive={setActive} active={active} item="CONTACT US">
             
             </MenuItem>
-            </Link>
+            {/* </Link> */}
         </Menu>
     
     </div>

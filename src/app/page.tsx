@@ -1,11 +1,12 @@
 import Herosection from "../components/Herosection";
 import Featurecourse from "../components/Featurecourse";
-
+import Mentor from "../components/Mentor";
 import Image from "next/image";
 import Whychooseus from "../components/Whychooseus";
 import testimonial from "../components/testimonial";
 import Review from "../components/Review";
 import Webinar from "../components/Webinar";
+import AnimatedTooltipPreview from "../components/AnimatedTooltipPreview";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
     
         <Review />
         <Webinar/>
+        <Mentor/>
+        <AnimatedTooltipPreview />
       </div>
     </main>
   );
