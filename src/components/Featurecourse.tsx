@@ -5,7 +5,6 @@ import courseData from "../data/ai_couse.json";
 import { CardBody, CardContainer, CardItem } from "../components/ui/3d-card"
 import Image from "next/image";
 import dogimage from "../../public/dog.jpeg";
-import { HoverEffect } from "../components/ui/card-hover-effect";
 interface Course {
   id: number;
   title: string;
